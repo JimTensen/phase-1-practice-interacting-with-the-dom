@@ -1,11 +1,9 @@
-let count = document.querySelector('#counter')
-console.log(count)
-
 let plusButton = document.querySelector('#plus')
 plusButton.addEventListener('click', incrementCounter)
 
 function incrementCounter(eventObject) {
-    count++
+    let count = document.querySelector('#counter');
+    return (count++);
 }
 
 
